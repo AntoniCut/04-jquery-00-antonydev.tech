@@ -7,7 +7,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
-  "theme_color": "#6366f1",
+  "theme_color": "#F7E7C0",
   "icons": [
     {
       "src": "/assets/manifest/jquery-logo-128x128.png",
@@ -21,3 +21,5 @@
     }
   ]
 }
+
+

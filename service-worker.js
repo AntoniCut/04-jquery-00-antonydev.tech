@@ -7,7 +7,7 @@
 
 
 //  -----  Cambiar esta versión al actualizar la app  -----
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v6';
 
 const CACHE_NAME = `antonydevtech-cache-${CACHE_VERSION}`;
 
@@ -66,30 +66,6 @@ self.addEventListener('activate', event => {
     self.clients.claim();
 
 });
-
-
-// self.addEventListener('activate', event => {
-
-//     event.waitUntil(
-
-//         caches
-
-//             .keys()
-
-//             .then(keys => 
-
-//                 Promise.all(
-
-//                     keys.map(key => 
-
-//                         key !== CACHE_NAME ? caches.delete(key) : null))
-//         )
-
-//     );
-
-//     self.clients.claim();  //  -----  toma el control de las páginas abiertas  -----
-
-// });
 
 
 
