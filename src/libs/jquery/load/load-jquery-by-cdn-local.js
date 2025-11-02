@@ -4,19 +4,17 @@
 
 
 
-//@ts-ignore
-import { loadJQueryByCdn } from '/src/libs/jquery/load/load-jquery-by-cdn.js';
-
-//@ts-ignore
-import { loadJQueryByLocal } from '/src/libs/jquery/load/load-jquery-by-local.js';
+import { loadJQueryByCdn } from './load-jquery-by-cdn.js';
+import { loadJQueryByLocal } from './load-jquery-by-local.js';
 
 
 
-/** - Carga jQuery desde un CDN con fallback a local si falla
- * @import  {CDNJQuery} from '../../../types/cdn-types.js';
- * @param {CDNJQuery|null} cdnJQuery 
- * @param {string} localJQuery 
- * @returns {Promise<JQueryStatic>}
+/** 
+ *  - `Carga jQuery desde un CDN con fallback a local si falla`
+ *  @import  {CDNJQuery} from '../../../types/cdn-types.js';
+ *  @param {CDNJQuery|null} cdnJQuery 
+ *  @param {string} localJQuery 
+ *  @returns {Promise<JQueryStatic>}
  */
 
 export const loadJQueryByCdnOLocal = (cdnJQuery = null, localJQuery) => {
@@ -27,7 +25,10 @@ export const loadJQueryByCdnOLocal = (cdnJQuery = null, localJQuery) => {
 
         //  -----  Verifica si jQuery ya está cargado  -----
         
-        /** @type {JQueryStatic} */
+        /** 
+         *  - Instancia de jQuery
+         *  @type {JQueryStatic} 
+         */
         
         //@ts-ignore
         const $ = window.jQuery;

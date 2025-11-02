@@ -4,12 +4,11 @@
 
 
 
-//@ts-ignore
-import { loadJQueryByLocal } from "/src/libs/jquery/load/load-jquery-by-local.js";
+import { loadJQueryByLocal } from "./load-jquery-by-local.js";
 
 
 
-/** - Carga jQuery desde un CDN con fallback a local si falla
+/** - `Carga jQuery desde un CDN`
  * @import  {CDNJQuery} from '../../../types/cdn-types.js';
  * @param {CDNJQuery} cdnJQuery 
  * @param {string} localJQuery 

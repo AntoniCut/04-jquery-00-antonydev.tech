@@ -4,17 +4,17 @@
 
 
 
-//@ts-ignore
-import { loadJQueryUIByLocal } from '/src/libs/jquery-ui/load/load-jquery-ui-by-local.js';
+import { loadJQueryUIByLocal } from './load-jquery-ui-by-local.js';
 
 
 
-/** - Carga jQuery desde un CDN con fallback a local si falla
- * @import  {CDNJQueryUI} from '../../../types/cdn-types.js';
- * @param {CDNJQueryUI} cdnJQueryUI 
- * @param {string} localJQueryUI 
- * @param {Function} resolve 
- * @param {Function} reject
+/** 
+ *  - `Carga jQuery desde un CDN`.
+ *  @import  {CDNJQueryUI} from '../../../types/cdn-types.js';
+ *  @param {CDNJQueryUI} cdnJQueryUI 
+ *  @param {string} localJQueryUI 
+ *  @param {Function} resolve 
+ *  @param {Function} reject
  */
 
 //  -----  Función para cargar jQuery si desde CDN  -----
@@ -45,8 +45,10 @@ export const loadJQueryUIByCdn = (cdnJQueryUI, localJQueryUI, resolve, reject) =
     script.onload = () => {
 
         if (jQuery.ui) {
+            
             console.warn("jQuery UI cargado desde CDN");
             resolve(jQuery);
+            
         } else {
             reject(new Error("jQuery UI no cargado correctamente desde CDN"));
         }

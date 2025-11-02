@@ -6,24 +6,15 @@
 */
 
 
+import { cdnJQuery_4_0_0 } from "./libs/jquery/cdn/cdn-jquery-4.0.0.js";
+import { loadJQueryByCdnOLocal } from "./libs/jquery/load/load-jquery-by-cdn-local.js";
 
-//@ts-ignore
-import { cdnJQuery_4_0_0 } from "/src/libs/jquery/cdn/cdn-jquery-4.0.0.js";
 
-//@ts-ignore
-import { loadJQueryByCdnOLocal } from "/src/libs/jquery/load/load-jquery-by-cdn-local.js";
+import { cdnJQueryUI_1_14_1 } from "./libs/jquery-ui/cdn/cdn-jquery-ui-1.14.1.js";
+import { loadJQueryUIByCdnOLocal } from "./libs/jquery-ui/load/load-jquery-ui-by-cdn-local.js";
 
-//@ts-ignore
-import { cdnJQueryUI_1_14_1 } from "/src/libs/jquery-ui/cdn/cdn-jquery-ui-1.14.1.js";
-
-//@ts-ignore
-import { loadJQueryUIByCdnOLocal } from "/src/libs/jquery-ui/load/load-jquery-ui-by-cdn-local.js";
-
-//@ts-ignore
-import { spaWithMethodLoadFromJQueryPlugins } from "/src/plugins/spa-with-method-load-from-jquery/jquery.spa-with-method-load-from-jquery.js";
-
-//@ts-ignore
-import { spaJQueryAntonydevTech } from "/src/scripts/spa/spa-jquery-antonydev-tech.js";
+import { spaWithMethodLoadFromJQueryPlugins } from "./plugins/spa-with-method-load-from-jquery/jquery.spa-with-method-load-from-jquery.js";
+import { spaJQueryAntonydevTech } from "./scripts/spa/spa-jquery-antonydev-tech.js";
 
 
 
@@ -32,12 +23,6 @@ import { spaJQueryAntonydevTech } from "/src/scripts/spa/spa-jquery-antonydev-te
     -----  Registro del Service Worker (SW)  -----
     ----------------------------------------------
 */
-
-
-/**
- * @description Registra el Service Worker y detecta nuevas versiones.
- * Si se detecta una nueva versión instalada, recarga la página automáticamente.
- */
 
 if ('serviceWorker' in navigator) {
 
@@ -86,13 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------- Referencias a los elementos del DOM ----------
 
     /** - Elemento de Carga 
-     * @type {HTMLDivElement|null}
+     *  @type {HTMLDivElement|null}
      */
     const loader = document.querySelector('#loader');   // Elemento de carga
 
     /**
-     * - Elemento de Layout Principal
-     * @type {HTMLDivElement|null}
+     *  - Elemento de Layout Principal
+     *  @type {HTMLDivElement|null}
      */
     const layout = document.querySelector('#layout');   // Contenedor principal
 
@@ -101,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("Loader o layout no encontrado en el DOM");
         return;
     }
+
 
     // ---------- Retrasar la animación para simular carga ----------
     setTimeout(() => {
@@ -134,17 +120,17 @@ document.addEventListener('DOMContentLoaded', () => {
 */
 
 /**
- * - Configuración del CDN de jQuery.
- * @import  {CDNJQuery} from './types/cdn-types.js';
- * @type {CDNJQuery}
+ *  - Configuración del `CDN de jQuery`.
+ *  @import  {CDNJQuery} from './types/cdn-types.js';
+ *  @type {CDNJQuery}
   */
 const cdnJQuery = cdnJQuery_4_0_0;
 
 /**
- * - Ruta del archivo jQuery local a usar como fallback si el CDN falla.
- * @type {string}
+ *  - Ruta del `Archivo jQuery local` a usar como fallback si el CDN falla.
+ *  @type {string}
  */
-const localJQuery = "/src/libs/jquery/local/jquery-4.0.0-beta.min.js";
+const localJQuery = "./libs/jquery/local/jquery-4.0.0-beta.min.js";
 
 
 
@@ -156,17 +142,17 @@ const localJQuery = "/src/libs/jquery/local/jquery-4.0.0-beta.min.js";
 
 
 /**
- * - Configuración del CDN de jQuery UI.
- * @import  {CDNJQueryUI} from './types/cdn-types.js';
- * @type {CDNJQueryUI}
+ *  - Configuración del `CDN de jQuery UI`.
+ *  @import  {CDNJQueryUI} from './types/cdn-types.js';
+ *  @type {CDNJQueryUI}
  */
 const cdnJQueryUI = cdnJQueryUI_1_14_1;
 
 /**
- * - Ruta del archivo jQuery UI local a usar como fallback si el CDN falla.
- * @type {string}
+ *  - Ruta del `Archivo jQuery UI local` a usar como fallback si el CDN falla.
+ *  @type {string}
  */
-const localJQueryUI = "/src/libs/jquery-ui/local/jquery-ui-1.14.1.min.js";
+const localJQueryUI = "./libs/jquery-ui/local/jquery-ui-1.14.1.min.js";
 
 
 
@@ -186,7 +172,12 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
 
     .then(
 
-        /**  @param {JQueryStatic} $ - Instancia de jQuery  */
+        /** 
+         * - Instancia de jQuery 
+         *  @param {JQueryStatic} $
+         */
+
+
 
         ($) => {
 
@@ -197,7 +188,9 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
 
                 .then(
                     
-                    /**  @param {JQueryStatic} $ - Instancia de jQuery  */
+                    /** - Instancia de jQuery 
+                     *  @param {JQueryStatic} $
+                     * */
 
                     ($) => {
 
@@ -225,5 +218,8 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
 
     .catch(
 
-        /** @param {Error} err */
+        /**
+         * - Manejo de `Errores` en la carga de jQuery o jQuery UI .
+         *  @param {Error} err 
+         */
         err => console.error("Error al cargar jQuery o jQuery UI:", err));

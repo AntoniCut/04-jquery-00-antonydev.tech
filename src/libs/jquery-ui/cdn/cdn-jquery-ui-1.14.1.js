@@ -3,9 +3,10 @@
 //  -----------------------------------------------
 
 
-/** - Configuración del CDN de jQuery UI. 
- * @import {CDNJQueryUI} from '../../../types/cdn-types.js';
- * @type {CDNJQueryUI} 
+/** 
+ *  - Configuración del `CDN de jQuery UI 1.14.1.min.js`
+ *  @import {CDNJQueryUI} from '../../../types/cdn-types.js';
+ *  @type {CDNJQueryUI} 
  */
 
 export const cdnJQueryUI_1_14_1 = {

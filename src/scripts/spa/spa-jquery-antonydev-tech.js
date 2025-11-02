@@ -7,33 +7,28 @@
 */
 
 
-//@ts-nocheck
+
+import { routesJQueryAntonydevTech } from "../../routes/routes-jquery-antonydev-tech.js";
 
 
-import { routesJQueryAntonydevTech } from "/src/routes/routes-jquery-antonydev-tech.js";
-
-
-/**
- * @function spaJQueryAntonydevTech 
- 
- * @description
- 
- * Inicializa la lógica **SPA** (Single Page Application) para
- * la sección *jQuery.antonydev.tech* del proyecto.
+/**  ----------------------------------------------------------------------------------------------------
+ *   @function `spaJQueryAntonydevTech`
+ *   
+ * - Inicializa la lógica **SPA** (Single Page Application) para
+ *   El Proyecto Principal jQuery.antonydev.tech utilizando jQuery.
  *
- * Esta función configura las rutas, opciones y elementos del
- * layout, y luego invoca el plugin `spaWithMethodLoadFromJQuery`
- * para manejar la navegación dinámica dentro de la aplicación.
- 
- *  1. Importa las rutas definidas en `routesJQueryAntonydevTech`.
- *  2. Combina las rutas en un array (`allRoutes`).
- *  3. Obtiene una referencia al contenedor principal (`#layout`).
- *  4. Configura las opciones necesarias para el plugin SPA,
- *     incluyendo las secciones del layout (header, navbar, main, footer).
- *  5. Invoca el plugin `spaWithMethodLoadFromJQuery` para activar
- *     la navegación en una sola página.
+ * - Esta función configura las rutas, opciones y elementos del
+ *   layout, y luego invoca el plugin `spaWithMethodLoadFromJQuery`
+ *   para manejar la navegación dinámica dentro de la aplicación.
+ *
+ *  - Importa las rutas definidas en:`routesJQueryAntonydevTech`.
+ *  - Combina las rutas en un array `allRoutes`.
+ *  - Obtiene una referencia al contenedor principal `#layout`.
+ *  - Configura las opciones necesarias para el plugin SPA,
+ *    incluyendo las secciones del layout `header`, `navbar`, `main`, `footer`.
+ *  - Invoca el plugin `spaWithMethodLoadFromJQuery` para activar la navegación en una sola página.
+ *  ----------------------------------------------------------------------------------------------------
  */
-
 
 export const spaJQueryAntonydevTech = () => {
 
@@ -46,9 +41,10 @@ export const spaJQueryAntonydevTech = () => {
     //  ----------  Arrays con la informacion del contenido a cargar de las rutas del proyecto ----------
 
        
-    /**
-     * -----  Array que combina todas las rutas definidas para la aplicación SPA  -----
-     * @type {RouteConfig[]}
+   /**
+     * - Array que combina todas las rutas definidas para la aplicación SPA.
+     * @import { Route } from '../../types/route-types.js'
+     * @type {Array<Route>}
      */
     
     const allRoutes = [
@@ -63,32 +59,20 @@ export const spaJQueryAntonydevTech = () => {
     /**
      * -  Elemento raíz de la aplicación SPA.
      * -  Selecciona el contenedor principal de la aplicación SPA utilizando jQuery.
-     * @type {JQuery<HTMLDivElement>}
-     
+     *  @type {JQuery<HTMLDivElement>}
      */
+    
     const $layout = $('#layout');
 
 
     //  ----------  Opciones que le pasamos al plugins  ----------
 
     /**
-     * Objeto de configuración que define cómo debe comportarse
-     * el plugin `spaWithMethodLoadFromJQuery`.
-     *
-     * @typedef {Object} optionsPluginsSPA
-     
-     * @property {Array<Object>} routes - Conjunto de rutas definidas para la SPA.
-     * @property {string} base - Ruta base de la aplicación (se deja vacía si no se usa `history.pushState` o hash routing).
-     * @property {string} layoutHeader - Selector CSS del contenedor de la cabecera.
-     * @property {string} layoutNavbar - Selector CSS del contenedor de la barra de navegación.
-     * @property {string} layoutMain - Selector CSS del contenedor principal donde se cargan las vistas.
-     * @property {string} layoutFooter - Selector CSS del contenedor del pie de página.
-     * @property {boolean} draggable - Indica si se habilitan funciones de arrastre dentro de la SPA.
-    */
-    
-    /**
-     * @type {optionsPluginsSPA}
+     * - Configuración de opciones para el plugin SPA.
+     * @import { ConfigOptionsSPA } from '../../types/config-option-spa-types.js';
+     * @type {ConfigOptionsSPA}
      */
+
     const optionsPluginsSPA = {
         routes: allRoutes,
         base: '',

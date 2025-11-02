@@ -8,28 +8,11 @@
 
 
 /**
- * @typedef {Object} RouteConfig
- * @description
- * - Objeto que define la configuración de una ruta en la aplicación SPA jQuery.antonydev.tech.
- * @property {string} id - Identificador único de la ruta (usado en los enlaces `data-id`).
- * @property {string} path - Ruta relativa del navegador (usada en `history.pushState`).
- * @property {string} urlLayoutHeader - URL del archivo HTML del layout del encabezado.
- * @property {string} urlLayoutNavbar - URL del archivo HTML del layout del menú de navegación.
- * @property {string} urlLayoutMain - URL del archivo HTML principal que se carga dinámicamente.
- * @property {string} urlLayoutFooter - URL del archivo HTML del pie de página.
- * @property {string} favicon - Ruta del favicon que se mostrará en la pestaña del navegador.
- * @property {string} pageTitle - Título del documento (propiedad `document.title`).
- * @property {string} headerTitle - Texto mostrado en el encabezado principal de la vista.
- * @property {string} [styles] - Hoja de estilos asociada a la vista (opcional).
- * @property {string[]} [scripts] - Archivos JavaScript adicionales a cargar (opcional).
+ *  - `Array de objetos de tipo Route` que definen las `rutas de la aplicación SPA` de Aprendiendo jQuery.
+ *  @import { Route } from '../types/route-types.js'
+ *  @type {Route[]}
  */
 
-
-/**
- * - Array de objetos `RouteConfig` que definen las rutas de la aplicación jQuery.antonydev.tech. 
- * - Cada ruta indica los archivos HTML que se cargarán dinámicamente en las diferentes secciones del layout (header, navbar, main y footer).
- * @type {RouteConfig[]}
- */
 export const routesJQueryAntonydevTech = [
 
     {

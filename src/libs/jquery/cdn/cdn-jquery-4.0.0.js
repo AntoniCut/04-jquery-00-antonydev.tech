@@ -1,13 +1,15 @@
 //  -------------------------------------------
-//  ----------  cdn-jquery-3.6.3.js  ----------
+//  ----------  cdn-jquery-4.0.0.js  ----------
 //  -------------------------------------------
 
 
 
-/** - Configuración del CDN de jQuery.
- * @import {CDNJQuery} from '../../../types/cdn-types.js'; 
- * @type {CDNJQuery} 
- * */
+/** 
+ *  - Configuración del `CDN de jQuery 4.0.0-beta.min.js`.
+ *  @import {CDNJQuery} from '../../../types/cdn-types.js'; 
+ *  @type {CDNJQuery} 
+ */
+
 export const cdnJQuery_4_0_0 = {
 
     srcCdn: "https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-beta/jquery.min.js",

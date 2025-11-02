@@ -4,20 +4,17 @@
 
 
 
-
-//@ts-ignore
-import { loadJQueryUIByCdn } from '/src/libs/jquery-ui/load/load-jquery-ui-by-cdn.js';
-
-//@ts-ignore
-import { loadJQueryUIByLocal } from '/src/libs/jquery-ui/load/load-jquery-ui-by-local.js';
+import { loadJQueryUIByCdn } from './load-jquery-ui-by-cdn.js';
+import { loadJQueryUIByLocal } from './load-jquery-ui-by-local.js';
 
 
 
-/** - Carga jQuery UI desde un CDN con fallback a local si falla.
- * @import  {CDNJQueryUI} from '../../../types/cdn-types.js';
- * @param {CDNJQueryUI|null} cdnJQueryUI 
- * @param {string} localJQueryUI
- * @returns {Promise<JQueryStatic>}
+/** 
+ *  - `Carga jQuery UI desde un CDN con fallback a local si falla`.
+ *  @import  {CDNJQueryUI} from '../../../types/cdn-types.js';
+ *  @param {CDNJQueryUI|null} cdnJQueryUI 
+ *  @param {string} localJQueryUI
+ *  @returns {Promise<JQueryStatic>}
  */
 
 
@@ -26,7 +23,6 @@ export const loadJQueryUIByCdnOLocal = (cdnJQueryUI = null, localJQueryUI) => {
 
 
     return new Promise((resolve, reject) => {
-
 
         console.log('\n');
         console.warn("Cargando jQuery UI...");
@@ -38,7 +34,6 @@ export const loadJQueryUIByCdnOLocal = (cdnJQueryUI = null, localJQueryUI) => {
             loadJQueryUIByLocal(localJQueryUI, resolve, reject);
             return;
         }
-
 
         //  -----  SI HAY CDN definido, intentar cargarlo  -----
         loadJQueryUIByCdn(cdnJQueryUI, localJQueryUI, resolve, reject);

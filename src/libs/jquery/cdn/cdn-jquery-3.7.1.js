@@ -1,13 +1,14 @@
 //  -------------------------------------------
-//  ----------  cdn-jquery-3.6.3.js  ----------
+//  ----------  cdn-jquery-3.7.1.js  ----------
 //  -------------------------------------------
 
 
 
-/** - Configuración del CDN de jQuery. 
- * @import {CDNJQuery} from '../../../types/cdn-types.js';
- * @type {CDNJQuery} 
- * */
+/** 
+ *  - Configuración del `CDN de jQuery 3.7.1.min.js`. 
+ *  @import {CDNJQuery} from '../../../types/cdn-types.js';
+ *  @type {CDNJQuery} 
+ */
 
 export const cdnJQuery_3_7_1 = {
 
