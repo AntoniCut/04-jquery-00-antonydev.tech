@@ -6,9 +6,12 @@
     ------------------------------------------------------
 */
 
+import { routesJQueryAntonydevTech } from '../routes/routes-jquery-antonydev-tech.js';
 
 
-import { routesJQueryAntonydevTech } from "../../routes/routes-jquery-antonydev-tech.js";
+
+//import { routesJQueryAntonydevTech } from "../../routes/routes-jquery-antonydev-tech.js";
+
 
 
 /**  ----------------------------------------------------------------------------------------------------
@@ -43,7 +46,7 @@ export const spaJQueryAntonydevTech = () => {
        
    /**
      * - Array que combina todas las rutas definidas para la aplicación SPA.
-     * @import { Route } from '../../types/route-types.js'
+     * @import { Route } from '../types/route-types.js'
      * @type {Array<Route>}
      */
     
@@ -69,7 +72,7 @@ export const spaJQueryAntonydevTech = () => {
 
     /**
      * - Configuración de opciones para el plugin SPA.
-     * @import { ConfigOptionsSPA } from '../../types/config-option-spa-types.js';
+     * @import { ConfigOptionsSPA } from '../types/config-option-spa-types.js';
      * @type {ConfigOptionsSPA}
      */
 

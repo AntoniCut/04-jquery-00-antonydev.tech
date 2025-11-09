@@ -111,6 +111,20 @@ export const routesJQueryAntonydevTech = [
         headerTitle: 'Mis Manuales de jQuery',
         styles: '/src/styles/pages/06-manuales-jquery.css',
         scripts: []
+    },
+
+    {
+        id: '404',
+        urlLayoutHeader: '/src/components-layout/layout-header.html',
+        urlLayoutNavbar: '/src/components-layout/layout-navbar.html',
+        urlLayoutMain: '/src/pages/404-not-found.html',
+        urlLayoutFooter: '/src/components-layout/layout-footer.html',
+        favicon: '/assets/favicon/jquery-favicon.ico',
+        pageTitle: '404 | Not Found',
+        path: '/06-manuales/projects-jquery/',
+        headerTitle: 'Página no encontrada - 404',
+        styles: '/src/styles/pages/00-home.css',
+        scripts: []
     }
 
 ];

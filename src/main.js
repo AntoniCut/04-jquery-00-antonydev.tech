@@ -14,7 +14,7 @@ import { cdnJQueryUI_1_14_1 } from "./libs/jquery-ui/cdn/cdn-jquery-ui-1.14.1.js
 import { loadJQueryUIByCdnOLocal } from "./libs/jquery-ui/load/load-jquery-ui-by-cdn-local.js";
 
 import { spaWithMethodLoadFromJQueryPlugins } from "./plugins/spa-with-method-load-from-jquery/jquery.spa-with-method-load-from-jquery.js";
-import { spaJQueryAntonydevTech } from "./scripts/spa/spa-jquery-antonydev-tech.js";
+import { spaJQueryAntonydevTech } from "./spa/spa-jquery-antonydev-tech.js";
 
 
 
