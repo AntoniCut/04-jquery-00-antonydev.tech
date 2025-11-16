@@ -37,6 +37,7 @@ self.addEventListener('install', event => {
         caches
             .open(CACHE_NAME)
             .then(cache => cache.addAll(ASSETS_TO_CACHE))
+            .catch(err => console.error('Error al cachear assets en el SW:', err))
     );
 
     self.skipWaiting(); // fuerza al SW a activarse inmediatamente

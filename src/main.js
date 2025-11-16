@@ -23,39 +23,46 @@ import { spaJQueryAntonydevTech } from "./spa/spa-jquery-antonydev-tech.js";
     -----  Registro del Service Worker (SW)  -----
     ----------------------------------------------
 */
-
 if ('serviceWorker' in navigator) {
 
-    navigator.serviceWorker.register('/service-worker.js')
-
-        .then(reg => {
-
-            // Detecta cuando un nuevo SW está instalándose
-            reg.addEventListener('updatefound', () => {
-
-                const newSW = reg.installing;
-
-                if (!newSW) {
-                    console.error('No se encontró el nuevo Service Worker.');
-                    return;
-                }
-
-                newSW.addEventListener('statechange', () => {
-
-                    if (newSW.state === 'installed' && navigator.serviceWorker.controller) {
-                        console.log('Nueva versión disponible, recarga para actualizar');
-                        // Opcional: recargar automáticamente
-                        window.location.reload();
-                    }
-
-                });
-
-            });
-
-        })
-
-        .catch(err => console.error('SW registration failed:', err));
+    navigator.serviceWorker
+        .register('/sw.js')
+        .then(reg => console.warn('Registro de SW exitoso', reg))
+        .catch(err => console.error('Error al tratar de registrar el sw', err))
 }
+
+// if ('serviceWorker' in navigator) {
+
+//     navigator.serviceWorker.register('/sw.js')
+
+//         .then(reg => {
+
+//             // Detecta cuando un nuevo SW está instalándose
+//             reg.addEventListener('updatefound', () => {
+
+//                 const newSW = reg.installing;
+
+//                 if (!newSW) {
+//                     console.error('No se encontró el nuevo Service Worker.');
+//                     return;
+//                 }
+
+//                 newSW.addEventListener('statechange', () => {
+
+//                     if (newSW.state === 'installed' && navigator.serviceWorker.controller) {
+//                         console.log('Nueva versión disponible, recarga para actualizar');
+//                         // Opcional: recargar automáticamente
+//                         window.location.reload();
+//                     }
+
+//                 });
+
+//             });
+
+//         })
+
+//         .catch(err => console.error('SW registration failed:', err));
+// }
 
 
 
@@ -187,14 +194,14 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
             return loadJQueryUIByCdnOLocal(cdnJQueryUI, localJQueryUI)
 
                 .then(
-                    
+
                     /** - Instancia de jQuery 
                      *  @param {JQueryStatic} $
                      * */
 
                     ($) => {
 
-                        
+
                         if (!$.ui) {
                             console.log('\n');
                             throw new Error("jQuery UI no se cargó correctamente.");
@@ -211,7 +218,7 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
                         //  ----- Limpia la consola después de 10 segundos  -----
                         setTimeout(() => console.clear(), 10000);
 
-                });
+                    });
 
         })
 
