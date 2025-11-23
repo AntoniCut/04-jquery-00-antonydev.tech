@@ -1,18 +1,17 @@
 /*
     -----------------------------------------------
     ----------  /jquery.antonydev.tech/  ----------
-    ----------  /src/styles/  ---------------------
-    ----------  /layout/  -------------------------
+    ----------  /src/styles/layout/  --------------
     ----------  /layout-main.css  -----------------
     -----------------------------------------------
 */
 
-.main__container {
+.layout__main {
     width: 100%;
 }
 
 
-.layout__main {
+.main__container {
     width: 100vw;
     overflow-x: hidden;
     display: flex;
@@ -24,7 +23,7 @@
 
 @media(min-width: 768px) {
     
-    .layout__main {
+    .main__container {
         margin-top: 0;
     }
 }
@@ -33,7 +32,7 @@
 .main__title {
     width: 90%;
     max-width: 120rem;
-    /* margin-top: 5rem; */
+    margin-top: 5rem;
     margin-bottom: 3rem;
     padding: 2rem;
     font-size: 2.6rem;

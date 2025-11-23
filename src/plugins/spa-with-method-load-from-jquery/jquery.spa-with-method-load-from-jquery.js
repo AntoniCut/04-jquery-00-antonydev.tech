@@ -1,7 +1,8 @@
 /*
-    --------------------------------------------------------------------
-    ----------  /jquery.spa-whith-method-load-from-jquery.js  ----------
-    --------------------------------------------------------------------
+    -------------------------------------------------------------------
+    ----------  /spa-with-method-load-from-jquery/  -------------------
+    ----------  /jquery.spa-with-method-load-from-jquery.js  ----------
+    -------------------------------------------------------------------
 */
 
 
@@ -421,7 +422,7 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
             const actionsNavbar = () => {
 
 
-                const $layoutNavbar = $('#layoutNavbar .layout__navbar');
+                const $layoutNavbar = $('#layoutNavbar .navbar__container');
 
                 //  -----  Ocultamos el navbar y el botón de cerrar al inicio  -----
                 $layoutNavbar.hide();
@@ -433,7 +434,7 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
 
                     .off('mouseenter.navbar mouseleave.navbar click.navbar')
 
-                    .on('mouseenter.navbar', '.layout__navbar', function () {
+                    .on('mouseenter.navbar', '.navbar__container', function () {
                         $(this).stop(true, true);
                     })
 

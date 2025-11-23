@@ -1,14 +1,13 @@
 /*
     -----------------------------------------------
     ----------  /jquery.antonydev.tech/  ----------
-    ----------  /src/styles/  ---------------------
-    ----------  /layout/  -------------------------
+    ----------  /src/styles/layout/  --------------
     ----------  /layout-footer.css  ---------------
     -----------------------------------------------
 */
 
 
-.footer__container {
+.layout__footer {
     min-width: 100%;
     margin: 0;
     padding: 0;
@@ -21,7 +20,7 @@
     ---------------------------
 */
 
-.layout__footer {
+.footer__container {
     width: 100vw;
     padding-bottom: 5rem;
     display: flex;

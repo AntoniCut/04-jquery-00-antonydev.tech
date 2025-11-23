@@ -7,13 +7,17 @@
 */
 
 
+/**
+ * @typedef {import('./route-types.js').Route} Route
+ */
+
+
 //  ----------  Esto asegura que VS Code lo trate como módulo  ----------
 export {}; 
 
 
 /**
- *  - Objeto que define la configuración que le pasamos al plugin `spaWithMethodLoadFromJQuery`
- * @import { Route } from './route-types.js'
+ *  - Objeto que define la `configuración` que le pasamos al plugin `spaWithMethodLoadFromJQuery`
  * 
  * @typedef {Object} ConfigOptionsSPA
  * @property {Array<Route>} routes - Conjunto de rutas definidas para la SPA.

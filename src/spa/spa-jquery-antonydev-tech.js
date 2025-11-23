@@ -6,16 +6,19 @@
     ------------------------------------------------------
 */
 
+
+/**
+ * @typedef {import('../types/route-types.js').Route} Route
+ * @typedef {import('../types/config-option-spa-types.js').ConfigOptionsSPA} ConfigOptionsSPA
+ */
+
+
 import { routesJQueryAntonydevTech } from '../routes/routes-jquery-antonydev-tech.js';
 
 
 
-//import { routesJQueryAntonydevTech } from "../../routes/routes-jquery-antonydev-tech.js";
-
-
-
 /**  ----------------------------------------------------------------------------------------------------
- *   @function `spaJQueryAntonydevTech`
+ *   ----- `spaJQueryAntonydevTech`  -----
  *   
  * - Inicializa la lógica **SPA** (Single Page Application) para
  *   El Proyecto Principal jQuery.antonydev.tech utilizando jQuery.
@@ -42,13 +45,11 @@ export const spaJQueryAntonydevTech = () => {
 
 
     //  ----------  Arrays con la informacion del contenido a cargar de las rutas del proyecto ----------
-
        
    /**
-     * - Array que combina todas las rutas definidas para la aplicación SPA.
-     * @import { Route } from '../types/route-types.js'
-     * @type {Array<Route>}
-     */
+    * - Array que combina todas las rutas definidas para la aplicación SPA.
+    * @type {Route[]}
+    */
     
     const allRoutes = [
 
@@ -72,7 +73,6 @@ export const spaJQueryAntonydevTech = () => {
 
     /**
      * - Configuración de opciones para el plugin SPA.
-     * @import { ConfigOptionsSPA } from '../types/config-option-spa-types.js';
      * @type {ConfigOptionsSPA}
      */
 

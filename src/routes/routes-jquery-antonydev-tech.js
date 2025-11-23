@@ -8,8 +8,12 @@
 
 
 /**
+ * @typedef {import('../types/route-types.js').Route} Route
+ */
+
+
+/**
  *  - `Array de objetos de tipo Route` que definen las `rutas de la aplicación SPA` de Aprendiendo jQuery.
- *  @import { Route } from '../types/route-types.js'
  *  @type {Route[]}
  */
 
@@ -17,10 +21,10 @@ export const routesJQueryAntonydevTech = [
 
     {
         id: 'home',
-        urlLayoutHeader: '/src/components-layout/layout-header.html',
-        urlLayoutNavbar: '/src/components-layout/layout-navbar.html',
+        urlLayoutHeader: '/src/components/layout/layout-header.html',
+        urlLayoutNavbar: '/src/components/layout/layout-navbar.html',
         urlLayoutMain: '/src/pages/00-home.html',
-        urlLayoutFooter: '/src/components-layout/layout-footer.html',
+        urlLayoutFooter: '/src/components/layout/layout-footer.html',
         favicon: '/assets/favicon/jquery-favicon.ico',
         pageTitle: 'jQuery Desarrollos by AntonyDev',
         path: '/',
@@ -31,10 +35,10 @@ export const routesJQueryAntonydevTech = [
 
     {
         id: 'udemy',
-        urlLayoutHeader: '/src/components-layout/udemy/layout-header.html',
-        urlLayoutNavbar: '/src/components-layout/udemy/layout-navbar.html',
+        urlLayoutHeader: '/src/components/layout/udemy/layout-header.html',
+        urlLayoutNavbar: '/src/components/layout/udemy/layout-navbar.html',
         urlLayoutMain: '/src/pages/01-udemy.html',
-        urlLayoutFooter: '/src/components-layout/udemy/layout-footer.html',
+        urlLayoutFooter: '/src/components/layout/udemy/layout-footer.html',
         favicon: '/assets/favicon/jquery-favicon.ico',
         pageTitle: 'Mis Cursos jQuery de Udemy',
         path: '/01-udemy/projects-jquery/',
@@ -45,10 +49,10 @@ export const routesJQueryAntonydevTech = [
 
     {
         id: 'youtube',
-        urlLayoutHeader: '/src/components-layout/youtube/layout-header.html',
-        urlLayoutNavbar: '/src/components-layout/youtube/layout-navbar.html',
+        urlLayoutHeader: '/src/components/layout/youtube/layout-header.html',
+        urlLayoutNavbar: '/src/components/layout/youtube/layout-navbar.html',
         urlLayoutMain: '/src/pages/02-youtube.html',
-        urlLayoutFooter: '/src/components-layout/youtube/layout-footer.html',
+        urlLayoutFooter: '/src/components/layout/youtube/layout-footer.html',
         favicon: '/assets/favicon/jquery-favicon.ico',
         pageTitle: 'Mis Cursos de jQuery de YouTube',
         path: '/02-youtube/projects-jquery/',
@@ -59,10 +63,10 @@ export const routesJQueryAntonydevTech = [
 
     {
         id: 'desWebCom',
-        urlLayoutHeader: '/src/components-layout/desarrolloweb.com/layout-header.html',
-        urlLayoutNavbar: '/src/components-layout/desarrolloweb.com/layout-navbar.html',
+        urlLayoutHeader: '/src/components/layout/desarrolloweb.com/layout-header.html',
+        urlLayoutNavbar: '/src/components/layout/desarrolloweb.com/layout-navbar.html',
         urlLayoutMain: '/src/pages/03-desarrolloweb.com.html',
-        urlLayoutFooter: '/src/components-layout/desarrolloweb.com/layout-footer.html',
+        urlLayoutFooter: '/src/components/layout/desarrolloweb.com/layout-footer.html',
         favicon: '/assets/favicon/jquery-favicon.ico',
         pageTitle: 'Mis Cursos de jQuery de desarrolloweb.com',
         path: '/03-desarrolloweb.com/projects-jquery/',
@@ -73,10 +77,10 @@ export const routesJQueryAntonydevTech = [
 
     {
         id: 'escuelaIt',
-        urlLayoutHeader: '/src/components-layout/escuela.it/layout-header.html',
-        urlLayoutNavbar: '/src/components-layout/escuela.it/layout-navbar.html',
+        urlLayoutHeader: '/src/components/layout/escuela.it/layout-header.html',
+        urlLayoutNavbar: '/src/components/layout/escuela.it/layout-navbar.html',
         urlLayoutMain: '/src/pages/04-escuela.it.html',
-        urlLayoutFooter: '/src/components-layout/escuela.it/layout-footer.html',
+        urlLayoutFooter: '/src/components/layout/escuela.it/layout-footer.html',
         favicon: '/assets/favicon/jquery-favicon.ico',
         pageTitle: 'Mis Cursos de jQuery de Escuela IT',
         path: '/04-escuela.it/projects-jquery/',
@@ -87,10 +91,10 @@ export const routesJQueryAntonydevTech = [
 
     {
         id: 'books',
-        urlLayoutHeader: '/src/components-layout/books/layout-header.html',
-        urlLayoutNavbar: '/src/components-layout/books/layout-navbar.html',
+        urlLayoutHeader: '/src/components/layout/books/layout-header.html',
+        urlLayoutNavbar: '/src/components/layout/books/layout-navbar.html',
         urlLayoutMain: '/src/pages/05-books-jquery.html',
-        urlLayoutFooter: '/src/components-layout/books/layout-footer.html',
+        urlLayoutFooter: '/src/components/layout/books/layout-footer.html',
         favicon: '/assets/favicon/jquery-favicon.ico',
         pageTitle: 'Mis Libros de jQuery',
         path: '/05-books/projects-jquery/',
@@ -101,10 +105,10 @@ export const routesJQueryAntonydevTech = [
 
     {
         id: 'manuales',
-        urlLayoutHeader: '/src/components-layout/manuales/layout-header.html',
-        urlLayoutNavbar: '/src/components-layout/manuales/layout-navbar.html',
+        urlLayoutHeader: '/src/components/layout/manuales/layout-header.html',
+        urlLayoutNavbar: '/src/components/layout/manuales/layout-navbar.html',
         urlLayoutMain: '/src/pages/06-manuales-jquery.html',
-        urlLayoutFooter: '/src/components-layout/manuales/layout-footer.html',
+        urlLayoutFooter: '/src/components/layout/manuales/layout-footer.html',
         favicon: '/assets/favicon/jquery-favicon.ico',
         pageTitle: 'Mis Manuales de jQuery',
         path: '/06-manuales/projects-jquery/',
@@ -115,10 +119,10 @@ export const routesJQueryAntonydevTech = [
 
     {
         id: '404',
-        urlLayoutHeader: '/src/components-layout/layout-header.html',
-        urlLayoutNavbar: '/src/components-layout/layout-navbar.html',
+        urlLayoutHeader: '/src/components/layout/layout-header.html',
+        urlLayoutNavbar: '/src/components/layout/layout-navbar.html',
         urlLayoutMain: '/src/pages/404-not-found.html',
-        urlLayoutFooter: '/src/components-layout/layout-footer.html',
+        urlLayoutFooter: '/src/components/layout/layout-footer.html',
         favicon: '/assets/favicon/jquery-favicon.ico',
         pageTitle: '404 | Not Found',
         path: '/06-manuales/projects-jquery/',

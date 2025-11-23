@@ -1,14 +1,13 @@
 /*
     -----------------------------------------------
     ----------  /jquery.antonydev.tech/  ----------
-    ----------  /src/styles/  ---------------------
-    ----------  /layout/  -------------------------
+    ----------  /src/styles/layout/  --------------
     ----------  /layout-header.css  ---------------
     -----------------------------------------------
 */
 
 
-.header__container {
+.layout__header {
     min-width: 100%;
     display: flex;
 }
@@ -20,7 +19,7 @@
     ---------------------------
 */
 
-.layout__header {
+.header__container {
     width: 100vw;
     position: relative;
     z-index: 100;
@@ -38,7 +37,7 @@
 
 @media (min-width: 1200px) {
 
-    .layout__header {
+    .header__container {
         display: grid;
         grid-template-columns: 30rem auto 30rem;
         column-gap: 1rem;
@@ -176,40 +175,6 @@
     transform: scale(1.1);
 }
 
-
-/*
-.cursos__logos--udemy {
-    width: 9rem;
-    height: auto;
-}
-
-
-.cursos__logos--youtube {
-    width: 9rem;
-    height: auto;
-}
-
-.cursos__logos--desarrollowebcom {
-    width: 9rem;
-    height: 5rem;
-    mix-blend-mode: multiply;
-}
-
-.cursos__logos--escuela-it {
-    width: 10rem;
-    height: auto;
-}
-
-.cursos__logos--jquery-books {
-    width: 10rem;
-    height: auto;
-}
-
-.cursos__logos--jquery-manuales {
-    width: 8rem;
-    height: auto;
-}
-*/
 
 /*
     ----------------------------------------------
