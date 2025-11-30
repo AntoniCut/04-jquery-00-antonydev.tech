@@ -7,6 +7,64 @@
 */
 
 
+.main__section--home {
+    width: 100%;
+    max-width: 120rem;
+    display: block;
+    text-align: left;
+    /* max-width: 80ch;  */
+    margin: 0 auto;
+}
+
+/* Título destacado */
+.main__section--home strong,
+.main__section--home b {
+    font-weight: 700;
+}
+
+/* Emojis como encabezados */
+.main__section--home p,
+.main__section--home div,
+.main__section--home span {
+    margin-bottom: 1.6rem;
+}
+
+/* Íconos con espacio y estilo */
+.main__section--home .emoji-title {
+    display: block;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+/* Si quieres destacar bloques temáticos */
+.main__section--home .block {
+    margin: 2.5rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid #2b7bff33;
+}
+
+/* Listas usadas en el texto (si las agregas luego) */
+.main__section--home ul {
+    padding-left: 2.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.main__section--home li {
+    margin: 0.5rem 0;
+}
+
+
+
+
+
+/*
+    ------------------------------------------------
+    -----  Logos de las plataformas de cursos  -----
+    ------------------------------------------------
+*/
+
 .cursos__logos--udemy {
     width: 9rem;
     height: auto;
