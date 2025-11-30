@@ -93,6 +93,10 @@
     padding: 2rem;
 }
 
+.container-icons-logos__jquery-ui--home {
+    margin-top: 2rem;
+}
+
 .jquery__icon-logo,
 .jquery-ui__icon-logo {
     display: flex;

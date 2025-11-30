@@ -38,7 +38,7 @@ export const spaJQueryAntonydevTech = () => {
     console.log('\n');
 
     /**
-     * - Array con TODAS las rutas de la aplicación.
+     * - Array que combina todas las rutas definidas para la aplicación SPA.
      * @type {Route[]}
      */
     const allRoutes = [
@@ -65,7 +65,7 @@ export const spaJQueryAntonydevTech = () => {
         draggable: true
     };
 
-    // ----------  Inicializamos el Plugin SPA  ----------
+    //  ----------  Invocamos el Plugins  --  jquery.spa-with-method-load-from-jquery.js - v2  ----------
     $layout.spaWithMethodLoadFromJQuery(optionsPluginsSPA);
 
 };
