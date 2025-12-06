@@ -46,7 +46,7 @@ export const routesJQueryAntonydevTech = [
         components: {
             "#layoutHeader": "/src/components/layout/udemy/layout-header.html",
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
-            "#layoutNavbar": "/src/components/layout/udemy/layout-navbar.html",
+            "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/01-udemy.html",
             "#layoutFooter": "/src/components/layout/udemy/layout-footer.html",
         },
@@ -63,7 +63,8 @@ export const routesJQueryAntonydevTech = [
         path: "/02-youtube/projects-jquery/",
         components: {
             "#layoutHeader": "/src/components/layout/youtube/layout-header.html",
-            "#layoutNavbar": "/src/components/layout/youtube/layout-navbar.html",
+            "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/02-youtube.html",
             "#layoutFooter": "/src/components/layout/youtube/layout-footer.html",
         },
@@ -79,7 +80,8 @@ export const routesJQueryAntonydevTech = [
         path: "/03-desarrolloweb.com/projects-jquery/",
         components: {
             "#layoutHeader": "/src/components/layout/desarrolloweb.com/layout-header.html",
-            "#layoutNavbar": "/src/components/layout/desarrolloweb.com/layout-navbar.html",
+            "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/03-desarrolloweb.com.html",
             "#layoutFooter": "/src/components/layout/desarrolloweb.com/layout-footer.html",
         },
@@ -95,7 +97,8 @@ export const routesJQueryAntonydevTech = [
         path: "/04-escuela.it/projects-jquery/",
         components: {
             "#layoutHeader": "/src/components/layout/escuela.it/layout-header.html",
-            "#layoutNavbar": "/src/components/layout/escuela.it/layout-navbar.html",
+            "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/04-escuela.it.html",
             "#layoutFooter": "/src/components/layout/escuela.it/layout-footer.html",
         },
@@ -111,7 +114,8 @@ export const routesJQueryAntonydevTech = [
         path: "/05-books/projects-jquery/",
         components: {
             "#layoutHeader": "/src/components/layout/books/layout-header.html",
-            "#layoutNavbar": "/src/components/layout/books/layout-navbar.html",
+            "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/05-books-jquery.html",
             "#layoutFooter": "/src/components/layout/books/layout-footer.html",
         },
@@ -128,7 +132,8 @@ export const routesJQueryAntonydevTech = [
         path: "/06-manuales/projects-jquery/",
         components: {
             "#layoutHeader": "/src/components/layout/manuales/layout-header.html",
-            "#layoutNavbar": "/src/components/layout/manuales/layout-navbar.html",
+            "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/06-manuales-jquery.html",
             "#layoutFooter": "/src/components/layout/manuales/layout-footer.html",
         },
@@ -138,15 +143,16 @@ export const routesJQueryAntonydevTech = [
     },
 
     {
-        id: '404',
+        id: '404NotFoundPage',
         favicon: "/assets/favicon/jquery-favicon.ico",
         pageTitle: "404 | Not Found",
         path: "/404",
         components: {
-            "#layoutHeader": "/src/components/layout/layout-header.html",
+            "#layoutHeader": undefined,
+            "#btnNavbar": "/src/components/buttons/btn-navbar.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
-            "#layoutMain": "/src/pages/404-not-found.html",
-            "#layoutFooter": "/src/components/layout/layout-footer.html",
+            "#layoutMain": "/src/pages/404-not-found-page.html",
+            "#layoutFooter": undefined,
         },
         headerTitle: "Página no encontrada - 404",
         styles: "/src/styles/pages/00-home.css",
