@@ -34,7 +34,9 @@ export const routesJQueryAntonydevTech = [
             "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
         headerTitle: "Bienvenido a mis desarrollos con jQuery",
-        styles: "/src/styles/pages/00-home.css",
+        styles: [
+            { href: "/src/styles/pages/00-home.css" }
+        ],
         scripts: []
     },
 
@@ -52,7 +54,9 @@ export const routesJQueryAntonydevTech = [
         },
 
         headerTitle: "Mis cursos de jQuery de Udemy",
-        styles: "/src/styles/pages/01-udemy.css",
+        styles: [ 
+            { href: "/src/styles/pages/01-udemy.css" }
+        ],
         scripts: []
     },
 
@@ -69,7 +73,9 @@ export const routesJQueryAntonydevTech = [
             "#layoutFooter": "/src/components/layout/youtube/layout-footer.html",
         },
         headerTitle: "Mis Cursos de jQuery de YouTube",
-        styles: "/src/styles/pages/02-youtube.css",
+        styles: [
+            { href: "/src/styles/pages/02-youtube.css" }
+        ],
         scripts: []
     },
 
@@ -86,7 +92,9 @@ export const routesJQueryAntonydevTech = [
             "#layoutFooter": "/src/components/layout/desarrolloweb.com/layout-footer.html",
         },
         headerTitle: "Mis Cursos de jQuery de desarrolloweb.com",
-        styles: "/src/styles/pages/03-desarrolloweb.com.css",
+        styles: [
+            { href: "/src/styles/pages/03-desarrolloweb.com.css" }
+        ],
         scripts: []
     },
 
@@ -103,7 +111,9 @@ export const routesJQueryAntonydevTech = [
             "#layoutFooter": "/src/components/layout/escuela.it/layout-footer.html",
         },
         headerTitle: "Mis Cursos de jQuery de Escuela IT",
-        styles: "/src/styles/pages/04-escuela.it.css",
+        styles: [
+            { href: "/src/styles/pages/04-escuela.it.css" }
+        ],
         scripts: []
     },
 
@@ -121,7 +131,9 @@ export const routesJQueryAntonydevTech = [
         },
 
         headerTitle: "Mis Libros de jQuery",
-        styles: "/src/styles/pages/05-books-jquery.css",
+        styles: [
+            { href: "/src/styles/pages/05-books-jquery.css" }
+        ],
         scripts: []
     },
 
@@ -138,7 +150,9 @@ export const routesJQueryAntonydevTech = [
             "#layoutFooter": "/src/components/layout/manuales/layout-footer.html",
         },
         headerTitle: "Mis Manuales de jQuery",
-        styles: "/src/styles/pages/06-manuales-jquery.css",
+        styles: [
+            { href: "/src/styles/pages/06-manuales-jquery.css" }
+        ],
         scripts: []
     },
 
@@ -155,7 +169,9 @@ export const routesJQueryAntonydevTech = [
             "#layoutFooter": undefined,
         },
         headerTitle: "Página no encontrada - 404",
-        styles: "/src/styles/pages/00-home.css",
+        styles: [
+            { href: "/src/styles/pages/00-home.css" }
+        ],
         scripts: []
     }
 

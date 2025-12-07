@@ -6,6 +6,7 @@
     -----------------------------------------------
 */
 
+
 //  ----------  Esto asegura que VS Code lo trate como módulo  ----------
 export { };
 
@@ -20,6 +21,19 @@ export { };
  * - Cada valor puede ser string o undefined.
  *
  * @typedef {Record<string, string|undefined>} RouteComponents
+ * 
+ */
+
+
+/**
+ * --------------------------
+ * -----  `RouteStyle` -----
+ * --------------------------
+ * 
+ * - Representa una hoja de estilos que debe cargarse dinámicamente.
+ * 
+ * @typedef {Object} RouteStyle
+ * @property {string} href - Ruta absoluta o relativa del archivo CSS.
  * 
  */
 
@@ -68,7 +82,8 @@ export { };
  *
  * @property {string} headerTitle - Texto mostrado en el encabezado principal de la vista.
  *
- * @property {string|null} [styles] - Hoja de estilos asociada a la vista (opcional).
+ * @property {RouteStyle[]|null} [styles] - Lista de hojas de estilos asociada a la vista (opcional).
  *
  * @property {RouteScript[]|null} [scripts] - Lista de archivos JavaScript adicionales que deben cargarse (opcional).
+ * 
  */
