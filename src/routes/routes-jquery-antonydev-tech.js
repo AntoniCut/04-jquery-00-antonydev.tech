@@ -50,7 +50,7 @@ export const routesJQueryAntonydevTech = [
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/01-udemy.html",
-            "#layoutFooter": "/src/components/layout/udemy/layout-footer.html",
+            "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
 
         headerTitle: "Mis cursos de jQuery de Udemy",
@@ -70,7 +70,7 @@ export const routesJQueryAntonydevTech = [
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/02-youtube.html",
-            "#layoutFooter": "/src/components/layout/youtube/layout-footer.html",
+            "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
         headerTitle: "Mis Cursos de jQuery de YouTube",
         styles: [
@@ -89,7 +89,7 @@ export const routesJQueryAntonydevTech = [
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/03-desarrolloweb.com.html",
-            "#layoutFooter": "/src/components/layout/desarrolloweb.com/layout-footer.html",
+            "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
         headerTitle: "Mis Cursos de jQuery de desarrolloweb.com",
         styles: [
@@ -108,7 +108,7 @@ export const routesJQueryAntonydevTech = [
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/04-escuela.it.html",
-            "#layoutFooter": "/src/components/layout/escuela.it/layout-footer.html",
+            "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
         headerTitle: "Mis Cursos de jQuery de Escuela IT",
         styles: [
@@ -127,7 +127,7 @@ export const routesJQueryAntonydevTech = [
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/05-books-jquery.html",
-            "#layoutFooter": "/src/components/layout/books/layout-footer.html",
+            "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
 
         headerTitle: "Mis Libros de jQuery",
@@ -147,7 +147,7 @@ export const routesJQueryAntonydevTech = [
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
             "#layoutMain": "/src/pages/06-manuales-jquery.html",
-            "#layoutFooter": "/src/components/layout/manuales/layout-footer.html",
+           "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
         headerTitle: "Mis Manuales de jQuery",
         styles: [

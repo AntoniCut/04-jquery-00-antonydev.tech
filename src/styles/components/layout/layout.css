@@ -141,6 +141,7 @@ body::-webkit-scrollbar {
     align-items: center;
     /* gap: 2rem; */
     position: absolute;
+    /* position: relative; */
     overflow-x: hidden;
     inset: 0;
     z-index: 0;

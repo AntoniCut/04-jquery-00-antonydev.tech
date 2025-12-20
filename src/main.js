@@ -112,7 +112,7 @@ const cdnJQuery = cdnJQuery_4_0_0_min;
  *  @type {string}
  */
 
-const localJQuery = "./libs/jquery/local/jquery-4.0.0-beta.min.js";
+const localJQuery = "/src/libs/jquery/local/jquery-4.0.0-beta.min.js";
 
 
 
@@ -134,7 +134,7 @@ const cdnJQueryUI = cdnJQueryUI_1_14_1_min;
  *  - Ruta del `Archivo jQuery UI local` a usar como fallback si el CDN falla.
  *  @type {string}
  */
-const localJQueryUI = "./libs/jquery-ui/local/jquery-ui-1.14.1.min.js";
+const localJQueryUI = "/src/libs/jquery-ui/local/jquery-ui-1.14.1.min.js";
 
 
 
