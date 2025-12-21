@@ -403,9 +403,9 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
                     const promise = new Promise((resolve, reject) => {
 
                         /*
-                            -----------------------------------------------------------------
+                            ------------------------------------------------------------
                             -----  Cargamos componente del DOM con jQuery .load()  -----
-                            -----------------------------------------------------------------
+                            ------------------------------------------------------------
                         */
 
                         $(selector).load(url, function (response, status, xhr) {
@@ -603,8 +603,8 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
              * - .navbar__btn-open
              * - .navbar__btn-close
              * - #linksThemesContainer
-             * - .navbar-themes-jquery-ui__btn-open
-             * - .navbar-themes-jquery-ui__btn-close
+             * - .navbar-ui__btn-open
+             * - .navbar-ui__btn-close
              * 
              */
 
@@ -639,8 +639,8 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
 
                 const menuThemes = {
                     container: $('#linksThemesContainer'),
-                    btnOpen: $('.navbar-themes-jquery-ui__btn-open'),
-                    btnClose: $('.navbar-themes-jquery-ui__btn-close')
+                    btnOpen: $('.navbar-ui__btn-open'),
+                    btnClose: $('.navbar-ui__btn-close')
                 };
 
 
@@ -739,7 +739,7 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
 
 
                 //  -----  Abrir menú themes UI  -----
-                $(document).on("click", ".navbar-themes-jquery-ui__btn-open", function (e) {
+                $(document).on("click", ".navbar-ui__btn-open", function (e) {
 
                     //  -----  prevenir propagación del click  -----
                     e.stopPropagation();
@@ -754,7 +754,7 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
 
 
                 //  -----  Cerrar menú themes UI  -----
-                $(document).on("click", ".navbar-themes-jquery-ui__btn-close", function (e) {
+                $(document).on("click", ".navbar-ui__btn-close", function (e) {
 
                     //  -----  prevenir propagación del click  -----
                     e.stopPropagation();

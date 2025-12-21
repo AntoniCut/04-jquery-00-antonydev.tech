@@ -16,7 +16,7 @@
 
 
 .navbar__btn-open,
-.navbar-themes-jquery-ui__btn-open {
+.navbar-ui__btn-open {
     position: absolute;
     width: 4rem;
     height: 4rem;
@@ -39,18 +39,19 @@
     background-color: #036AAD;
 }
 
-.navbar-themes-jquery-ui__btn-open {
+.navbar-ui__btn-open {
     top: 2rem;
     right: 2rem;
     background-color: #F89C15;
 }
 
 .navbar__btn-open:hover,
-.navbar-themes-jquery-ui__btn-open:hover {
+.navbar-ui__btn-open:hover {
     transform: scale(1.1);
 }
 
-.btn__icon-open {
+.navbar__btn-open .btn__icon-open,
+.navbar-ui__btn-open .btn-ui__icon-open {
     display: flex;
     width: 2rem;
     height: 0.2rem;
@@ -66,7 +67,7 @@
 */
 
 .navbar__btn-close,
-.navbar-themes-jquery-ui__btn-close {
+.navbar-ui__btn-close {
     position: absolute;
     width: 4rem;
     height: 4rem;
@@ -86,30 +87,32 @@
     background-color: #036AAD;
 }
 
-.navbar-themes-jquery-ui__btn-close {
-    display: none;
+.navbar-ui__btn-close {
     top: 2rem;
     right: 2rem;
     background-color: #F89C15;
 }
 
 .navbar__btn-close:hover,
-.navbar-themes-jquery-ui__btn-close:hover {
+.navbar-ui__btn-close:hover {
     transition: all 300ms ease-in-out;
     transform: scale(1.1);
 }
 
-.btn__icon-close {
+.navbar__btn-close .btn__icon-close,
+.navbar-ui__btn-close .btn-ui__icon-close {
     position: absolute;
     width: 2rem;
     height: 0.2rem;
     background-color: white;
 }
 
-.btn__icon-close:first-child {
+.navbar__btn-close .btn__icon-close:first-child,
+.navbar-ui__btn-close .btn-ui__icon-close:first-child {
     transform: rotate(45deg);
 }
 
-.btn__icon-close:last-child {
+.navbar__btn-close .btn__icon-close:last-child,
+.navbar-ui__btn-close .btn-ui__icon-close:last-child {
     transform: rotate(-45deg);
 }
