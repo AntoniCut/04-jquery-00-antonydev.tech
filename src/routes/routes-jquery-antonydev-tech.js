@@ -30,6 +30,7 @@ export const routesJQueryAntonydevTech = [
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
             "#btnNavbarThemesJQueryUI": "/src/components/buttons/btn-navbar-themes-jquery-ui.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
+            "#layoutNavbarThemesUI": '/src/components/layout/layout-navbar-themes-jquery-ui.html',
             "#layoutMain": "/src/pages/00-home.html",
             "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
@@ -37,7 +38,9 @@ export const routesJQueryAntonydevTech = [
         styles: [
             { href: "/src/styles/pages/00-home.css" }
         ],
-        scripts: []
+        scripts: [
+            { src: "/src/scripts/home.js" }
+        ]
     },
 
     {
@@ -48,7 +51,9 @@ export const routesJQueryAntonydevTech = [
         components: {
             "#layoutHeader": "/src/components/layout/udemy/layout-header.html",
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#btnNavbarThemesJQueryUI": undefined,
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
+            "#layoutNavbarThemesUI": undefined,
             "#layoutMain": "/src/pages/01-udemy.html",
             "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
@@ -68,7 +73,9 @@ export const routesJQueryAntonydevTech = [
         components: {
             "#layoutHeader": "/src/components/layout/youtube/layout-header.html",
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#btnNavbarThemesJQueryUI": undefined,
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
+            "#layoutNavbarThemesUI": undefined,
             "#layoutMain": "/src/pages/02-youtube.html",
             "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
@@ -87,7 +94,9 @@ export const routesJQueryAntonydevTech = [
         components: {
             "#layoutHeader": "/src/components/layout/desarrolloweb.com/layout-header.html",
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#btnNavbarThemesJQueryUI": undefined,
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
+            "#layoutNavbarThemesUI": undefined,
             "#layoutMain": "/src/pages/03-desarrolloweb.com.html",
             "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
@@ -106,7 +115,9 @@ export const routesJQueryAntonydevTech = [
         components: {
             "#layoutHeader": "/src/components/layout/escuela.it/layout-header.html",
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#btnNavbarThemesJQueryUI": "/src/components/buttons/btn-navbar-themes-jquery-ui.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
+            "#layoutNavbarThemesUI": undefined,
             "#layoutMain": "/src/pages/04-escuela.it.html",
             "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
@@ -125,7 +136,9 @@ export const routesJQueryAntonydevTech = [
         components: {
             "#layoutHeader": "/src/components/layout/books/layout-header.html",
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#btnNavbarThemesJQueryUI": "/src/components/buttons/btn-navbar-themes-jquery-ui.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
+            "#layoutNavbarThemesUI": undefined,
             "#layoutMain": "/src/pages/05-books-jquery.html",
             "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
@@ -145,7 +158,9 @@ export const routesJQueryAntonydevTech = [
         components: {
             "#layoutHeader": "/src/components/layout/manuales/layout-header.html",
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#btnNavbarThemesJQueryUI": "/src/components/buttons/btn-navbar-themes-jquery-ui.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
+            "#layoutNavbarThemesUI": undefined,
             "#layoutMain": "/src/pages/06-manuales-jquery.html",
            "#layoutFooter": "/src/components/layout/layout-footer.html",
         },
@@ -164,7 +179,9 @@ export const routesJQueryAntonydevTech = [
         components: {
             "#layoutHeader": undefined,
             "#btnNavbar": "/src/components/buttons/btn-navbar.html",
+            "#btnNavbarThemesJQueryUI": "/src/components/buttons/btn-navbar-themes-jquery-ui.html",
             "#layoutNavbar": "/src/components/layout/layout-navbar.html",
+            "#layoutNavbarThemesUI": undefined,
             "#layoutMain": "/src/pages/404-not-found-page.html",
             "#layoutFooter": undefined,
         },
