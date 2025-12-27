@@ -14,8 +14,8 @@
     "include": [
         "global.d.ts",
         "src",
-        "src/types/jquery-spa-plugin.d.ts"
-        
+        "src/types/jquery-spa-plugin.d.ts",
+        "node_modules/@types/**/*"
     ],
     "exclude": [
         "node_modules",

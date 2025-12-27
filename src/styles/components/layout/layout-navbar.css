@@ -8,21 +8,9 @@
 
 
 /*  
-    --------------------------------------------------------
-    -----  Colores base para el background del navbar  -----
-    --------------------------------------------------------  
-*/
-
-:root {
-    --bg: #EAF1FD;
-    --grid: #e5e7eb;
-}
-
-
-/*  
-    ------------------------------------------
-    -----  Contenedor del menú (navbar)  -----
-    ------------------------------------------  
+    ----------------------------------------------------------------------
+    -----  Layout Navbar  -  Menú Principal y Menú Themes jQuery UI  -----
+    ----------------------------------------------------------------------
 */
 
 .layout__navbar {
@@ -35,7 +23,6 @@
     left: 0;
     z-index: 1000;
 }
-
 
 @media (min-width: 768px) {
 
@@ -51,8 +38,7 @@
     ----------------------------
 */
 
-.navbar__container,
-.navbar-themes-jquery-ui__container {
+.navbar__container{
     position: fixed;
     width: 100%;
     height: 100dvh;
@@ -72,8 +58,7 @@
 
 @media (min-width: 768px) {
 
-    .navbar__container,
-    .navbar-themes-jquery-ui__container {
+    .navbar__container {
         max-width: 125rem;
         display: flex;
         flex-direction: row;
@@ -83,74 +68,6 @@
         gap: 2rem;
     }
 
-}
-
-
-/*
-    -----------------------------------------------
-    -----  Título del menú temas jQuery UI  -----
-    -----------------------------------------------
-*/
-
-.navbar-themes-jquery-ui__title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 125rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-    margin-bottom: 10rem;
-    padding: 3rem;
-    background-color: #F7E7C0;
-    background-image:
-        linear-gradient(to right, #e5e7eb 1px, transparent 1px),
-        linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
-    background-size: 40px 40px;
-    box-shadow: 10px 10px 10px rgb(209, 220, 235);
-}
-
-
-/*
-    ------------------------------------------------
-    -----  Botones del menú temas jQuery UI  -----
-    ------------------------------------------------
-*/
-
-.navbar-themes-jquery-ui__btns {
-    position: relative;
-    width: 100%;
-    height: 80%;
-    margin-top: 10rem;
-    padding: 3rem;
-    /* padding-top: 5rem; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    justify-items: center;
-    align-items: center;
-}
-
-@media (min-width: 500px) {
-
-    .navbar-themes-jquery-ui__btns {
-        max-width: 125rem;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 2rem;
-    }
-}
-
-@media (min-width: 768px) {
-
-    .navbar-themes-jquery-ui__btns {
-        width: auto;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        column-gap: 2rem;
-    }
 }
 
 

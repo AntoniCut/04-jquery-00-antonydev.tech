@@ -686,7 +686,7 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
                     menu.btnOpen.show();
                     menu.btnClose.hide();
                 }
-
+                
 
                 /**
                  * - `Verifica si un click ocurrió dentro de un elemento`
@@ -1381,7 +1381,7 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
                 -----------------------------------------
             */
 
-                
+
             //  -----  Mensaje de plugin cargado  -----
             console.log('\n');
             console.log('%c ✅ ✅ ✅ plugin  -  jquery.spa-with-method-load-from-jquery.js  -  versión 3  -  cargado!!! ✅ ✅ ✅', 'background:#3498db; color:black; padding:20px; font-size:20px; font-weight:bold;');
