@@ -13,9 +13,10 @@
     },
     "include": [
         "global.d.ts",
-        "src",
+        "jquery-global.d.ts",
         "src/types/jquery-spa-plugin.d.ts",
-        "node_modules/@types/**/*"
+        "node_modules/@types/**/*",
+        "src",
     ],
     "exclude": [
         "node_modules",

@@ -65,7 +65,8 @@ export const spaJQueryAntonydevTech = () => {
         draggable: true
     };
 
-    //  ----------  Invocamos el Plugins  --  jquery.spa-with-method-load-from-jquery.js - v2  ----------
+    //  ----------  Invocamos el Plugins  --  jquery.spa-with-method-load-from-jquery.js - v4  ----------
     $layout.spaWithMethodLoadFromJQuery(optionsPluginsSPA);
+
 
 };

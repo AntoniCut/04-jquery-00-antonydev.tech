@@ -1,8 +1,8 @@
 /*
-    --------------------------------------------
-    ----------  /jquery/types/  ----------------
-    ----------  /cdn-jquery-types.js  ----------
-    --------------------------------------------
+    ------------------------------------------------------
+    ----------  /src/libs/jquery/core/types/  ------------
+    ----------  /cdn-jquery-types.js  --------------------
+    ------------------------------------------------------
 */
 
 
@@ -11,7 +11,8 @@ export {};
 
 
 /**
- * Configuración del CDN de jQuery
+ * -----  `Configuración del CDN de jQuery`  -----
+ * 
  * @typedef {Object} CDNJQuery
  * @property {string} srcCdn - URL del archivo jQuery en el CDN.
  * @property {string} [integrity] - Hash de integridad para seguridad (opcional).

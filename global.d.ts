@@ -17,4 +17,4 @@ interface HTMLArticleElement extends HTMLElement {}
 interface HTMLAsideElement extends HTMLElement {}
 interface HTMLFigureElement extends HTMLElement {}
 interface HTMLFigcaptionElement extends HTMLElement {}
-
+interface HTMLTimeElement extends HTMLElement {}

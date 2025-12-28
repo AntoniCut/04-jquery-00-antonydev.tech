@@ -22,14 +22,7 @@
       -----------------------------------
   */
 
-    /**
-     * - Agregar tooltips a los elementos con jQuery UI
-     * @type {JQuery<Document>}
-     */
     $(document).tooltip();
 
-   
-
-
+    
 })(jQuery);
-

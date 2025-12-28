@@ -1,34 +1,42 @@
 /*  
     -------------------------------------------------------
-    ----------  /jquery-ui/load/  -------------------------
+    ----------  /src/libs/jquery/ui/scripts/  -------------
     ----------  /load-jquery-ui-by-cdn-local.js  ----------
     -------------------------------------------------------
 */
 
-
-/**
- * @typedef {import('../types/cdn-jquery-ui-types.js').CDNJQueryUI} CDNJQueryUI
- */
 
 
 import { loadJQueryUIByCdn } from './load-jquery-ui-by-cdn.js';
 import { loadJQueryUIByLocal } from './load-jquery-ui-by-local.js';
 
 
+/** @typedef {import('../types/cdn-jquery-ui-types.js').CDNJQueryUI} CDNJQueryUI */
+
 
 /** 
+ * --------------------------------------------------------------------------
+ * -----  `loadJQueryUIByCdnOLocal(cdnJQueryUI = null, localJQueryUI)`  -----
+ * --------------------------------------------------------------------------
+ * 
  *  - `Carga jQuery UI desde un CDN con fallback a local si falla`.
- *  @param {CDNJQueryUI|null} cdnJQueryUI 
- *  @param {string} localJQueryUI
- *  @returns {Promise<JQueryStatic>}
+ * 
+ * @param {CDNJQueryUI|null} cdnJQueryUI - Objeto con datos del CDN de jQuery UI. Si es `null`, se carga directamente desde local
+ * @param {string} localJQueryUI - Ruta local a jQuery UI.
+ * @returns {Promise<JQueryStatic>} - Promesa que se resuelve con el objeto `jQuery` cuando jQuery UI se ha cargado correctamente.
+ * @note - Requiere que jQuery esté cargado previamente. Si no, lanzará error al intentar acceder a `jQuery.ui`.
  */
 
-
-//  -----  Función para cargar jQuery UI desde CDN o local  -----
 export const loadJQueryUIByCdnOLocal = (cdnJQueryUI = null, localJQueryUI) => {
 
 
-    return new Promise((resolve, reject) => {
+    return new Promise(
+        
+        /** 
+         * @param {(jq: JQueryStatic) => void} resolve
+         * @param {(err: Error) => void} reject 
+         */
+        (resolve, reject) => {
 
         console.log('\n');
         console.warn("Cargando jQuery UI...");
