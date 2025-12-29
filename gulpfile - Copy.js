@@ -5,7 +5,6 @@
     -----------------------------------------------
 */
 
-
 import gulp from "gulp";
 import terser from "gulp-terser";
 import cleanCSS from "gulp-clean-css";
@@ -15,43 +14,36 @@ import { deleteAsync } from "del";
 
 //  ----- ⚡ Versión con módulos ES + exclusiones  -----
 
+
 /* 
-    -------------------------------------------
-    -----  📌  --  EXCLUSIONES GLOBALES  -----
-    -------------------------------------------
+    ---------------------------------------
+    -----  📌  EXCLUSIONES GLOBALES  -----
+    ---------------------------------------
 */
 
 const EXCLUDES = [
-    "!assets/**",
+    "!src/**/node_modules/**",
     "!src/**/.git/**",
     "!src/**/*.ts",
     "!src/**/*.map",
+    "!assets/**",
     "!node_modules/**",
     "!gulpfile.js",
     "!package.json",
     "!package-lock.json"
 ];
 
-
-/* 
-    -----------------------------------
-    -----  🧹  --  LIMPIAR DIST  -----
-    -----------------------------------
-*/
-
+/* ==================================================
+   🧹 LIMPIAR DIST
+   ================================================== */
 export function clean() {
     return deleteAsync(["dist"]);
 }
 
-
-/* 
-    -------------------------------------
-    -----  🟨  --  JS – dist/src/  -----
-    -------------------------------------
-*/
-
+/* ==================================================
+   🟨 JS – dist/src/
+   ================================================== */
 export function minifyAllJs() {
-    
     return gulp
         .src(
             ["src/**/*.js", ...EXCLUDES],
@@ -61,15 +53,10 @@ export function minifyAllJs() {
         .pipe(gulp.dest("dist"));
 }
 
-
-/* 
-    -------------------------------------
-    -----  🟦  --  CSS – dist/src/  -----
-    -------------------------------------
-*/
-
+/* ==================================================
+   🟦 CSS – dist/src/
+   ================================================== */
 export function minifyAllCss() {
-    
     return gulp
         .src(
             ["src/**/*.css", ...EXCLUDES],
@@ -79,15 +66,10 @@ export function minifyAllCss() {
         .pipe(gulp.dest("dist"));
 }
 
-
-/* 
-    ------------------------------------------------------
-    -----  🟥  --  index.html DE RAÍZ (MINIFICADO)  -----
-    ------------------------------------------------------
-*/
-
+/* ==================================================
+   🟥 index.html DE RAÍZ (MINIFICADO)
+   ================================================== */
 export function minifyRootIndex() {
-    
     return gulp
         .src("index.html")
         .pipe(
@@ -100,14 +82,10 @@ export function minifyRootIndex() {
 }
 
 
-/* 
-    ---------------------------------------
-    -----  🟥  --  HTML – dist/src/  -----
-    ---------------------------------------
-*/
-
+/* ==================================================
+   🟥 HTML – dist/src/
+   ================================================== */
 export function minifyHtml() {
-    
     return gulp
         .src(
             ["src/**/*.html", ...EXCLUDES],
@@ -122,26 +100,18 @@ export function minifyHtml() {
         .pipe(gulp.dest("dist"));
 }
 
-
-/*
-    --------------------------------------
-    -----  📄  --  ARCHIVOS DE RAÍZ  -----
-    -------------------------------------- 
-*/
-
+/* ==================================================
+   📄 ARCHIVOS DE RAÍZ
+   ================================================== */
 export function copyRootFiles() {
-    
     return gulp
         .src(["manifest.json", "sw.js"])
         .pipe(gulp.dest("dist"));
 }
 
-
-/* 
-    ---------------------------
-    -----  🚀  --  BUILD  -----
-    --------------------------- 
-*/
+/* ==================================================
+   🚀 BUILD
+   ================================================== */
 export const build = gulp.series(
     clean,
     gulp.parallel(
@@ -153,6 +123,4 @@ export const build = gulp.series(
     )
 );
 
-
-//  -----  🔥  DEFAULT TASK  -----
 export default build;

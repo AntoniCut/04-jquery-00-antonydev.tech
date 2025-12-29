@@ -41,7 +41,7 @@ export const loadJQueryByCdnOLocal = (cdnJQuery = null, localJQuery) => {
 
         //  -----  Verifica si jQuery ya está cargado  -----
         
-         /** @type {JQueryStatic | undefined} */
+         /** @type {JQueryStatic|undefined} */
         const jQuery = window.jQuery;
 
         //  -----  Si ya está cargado, resolver  -----

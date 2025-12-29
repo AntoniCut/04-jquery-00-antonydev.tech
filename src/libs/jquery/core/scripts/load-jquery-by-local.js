@@ -31,7 +31,7 @@ export const loadJQueryByLocal = (localJQuery, resolve, reject) => {
     //  -----  Eventos de Carga  -----
     localScript.onload = () => {
         
-        /** @type {JQueryStatic | undefined} */
+        /** @type {JQueryStatic|undefined} */
         const jQuery = window.jQuery;
 
         if (jQuery && jQuery.fn && jQuery.fn.jquery) {

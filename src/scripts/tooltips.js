@@ -12,7 +12,7 @@
 
 
     console.log('\n')
-    console.warn('-----  home.js  -----');
+    console.warn('-----  tooltips.js  -----');
     console.log('\n');
 
 
