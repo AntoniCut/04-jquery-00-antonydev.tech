@@ -43,16 +43,31 @@
 .navbar__btn-open,
 .navbar__btn-close {
     top: 2rem;
-    left: 2rem;
+    left: 1rem;
     background-color: #036AAD;
+}
+
+@media (min-width: 768px) {
+    .navbar__btn-open,
+    .navbar__btn-close {
+        left: 2rem;
+    }
 }
 
 .navbar-ui__btn-open,
 .navbar-ui__btn-close {
     top: 2rem;
-    right: 3rem;
+    right: 1rem;
     background-color: #F89C15;
 }
+
+@media (min-width: 768px) {
+    .navbar-ui__btn-open,
+    .navbar-ui__btn-close {
+        right: 3rem;
+    }
+}
+
 
 .navbar__btn-open:hover,
 .navbar-ui__btn-open:hover {
