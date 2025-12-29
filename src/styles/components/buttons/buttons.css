@@ -8,16 +8,20 @@
 
 
 /*
-    ----------------------------------------------------------------
-    -----  Botón Hamburguesa Open del menú (navbar)  ---------------
-    -----  Botón Hamburguesa Open del menú (Themes jQuery UI)  -----
-    ----------------------------------------------------------------
+    --------------------------------------------------------------------------
+    -----  Botones Hamburguesa Open y close del menú (navbar)  ---------------
+    -----  Botones Hamburguesa Open y close del menú (Themes jQuery UI)  -----
+    --------------------------------------------------------------------------
 */
 
 
+/*  -----  containers  -----  */
+
 .navbar__btn-open,
-.navbar-ui__btn-open {
-    position: absolute;
+.navbar-ui__btn-open,
+.navbar__btn-close,
+.navbar-ui__btn-close {
+    position: fixed;
     width: 4rem;
     height: 4rem;
     padding: 0.4rem;
@@ -33,15 +37,20 @@
     transition: all 300ms ease-in-out;
 }
 
-.navbar__btn-open {
+
+/*  -----  buttons  -----  */
+
+.navbar__btn-open,
+.navbar__btn-close {
     top: 2rem;
     left: 2rem;
     background-color: #036AAD;
 }
 
-.navbar-ui__btn-open {
+.navbar-ui__btn-open,
+.navbar-ui__btn-close {
     top: 2rem;
-    right: 2rem;
+    right: 3rem;
     background-color: #F89C15;
 }
 
@@ -58,46 +67,14 @@
     background-color: white;
 }
 
-
-/*
-    ----------------------------------------------------------------
-    -----  Botón Hamburguesa Open del menú (navbar)  ---------------
-    -----  Botón Hamburguesa Open del menú (Themes jQuery UI)  -----
-    ----------------------------------------------------------------
-*/
-
-.navbar__btn-close,
-.navbar-ui__btn-close {
-    position: absolute;
-    width: 4rem;
-    height: 4rem;
-    padding: 0.4rem;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    z-index: 10000;
-}
-
-.navbar__btn-close {
-    top: 2rem;
-    left: 2rem;
-    background-color: #036AAD;
-}
-
-.navbar-ui__btn-close {
-    top: 2rem;
-    right: 2rem;
-    background-color: #F89C15;
-}
-
 .navbar__btn-close:hover,
 .navbar-ui__btn-close:hover {
     transition: all 300ms ease-in-out;
     transform: scale(1.1);
 }
+
+
+/*  -----  icons  -----  */
 
 .navbar__btn-close .btn__icon-close,
 .navbar-ui__btn-close .btn-ui__icon-close {
