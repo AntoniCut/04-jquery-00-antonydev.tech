@@ -9,7 +9,7 @@
 import { registerServiceWorker } from './scripts/register-service-worker.js';
 import { effectLoadingPage } from './scripts/effect-loading-page.js';
 import { fallbackJQueryJQueryUI } from './libs/jquery/loaders/fallback-jquery-jquery-ui.js'
-import { spaWithMethodLoadFromJQueryPlugins } from './plugins/spa-with-method-load-from-jquery/v4/jquery.spa-with-method-load-from-jquery.js';
+import { spaWithMethodLoadFromJQueryPlugins } from './plugins/spa-with-method-load-from-jquery/v3/jquery.spa-with-method-load-from-jquery.js';
 import { spaJQueryAntonydevTech } from './spa/spa-jquery-antonydev-tech.js';
 
 

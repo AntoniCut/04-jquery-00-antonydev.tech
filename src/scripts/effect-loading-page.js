@@ -60,7 +60,7 @@ export const effectLoadingPage = () => {
                 loader.style.display = "none";
             }, { once: true });
 
-        }, 1000);
+        }, 300);
 
     });
 

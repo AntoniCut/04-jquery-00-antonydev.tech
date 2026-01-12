@@ -8,6 +8,6 @@
 
 
 .cursos__logos--udemy {
-    width: 15rem;
-    height: auto;
+    width: 12rem;
+    aspect-ratio: 3/1;
 }

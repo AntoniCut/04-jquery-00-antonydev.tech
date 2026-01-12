@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1024" height="1024" viewBox="0 0 1024 1024"
+ preserveAspectRatio="xMidYMid meet">
+
+  <!-- Definimos el gradiente -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#182848;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4b6cb7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo circular -->
+  <circle cx="512" cy="512" r="512" fill="url(#grad1)" />
+
+  <!-- Texto arriba -->
+  <text x="512" y="380" font-family="Arial, sans-serif" font-size="60" fill="white" text-anchor="middle" dominant-baseline="middle">
+    jquery
+  </text>
+
+  <!-- Texto abajo -->
+  <text x="512" y="650" font-family="Arial, sans-serif" font-size="50" fill="white" text-anchor="middle" dominant-baseline="middle">
+    antonydev.tech
+  </text>
+
+  <!-- Paths originales -->
+  <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
+     fill="#000000" stroke="none">
+    <path d="M4840 10160 c-1533 -89 -2907 -837 -3811 -2075 -481 -659 -799 -1468
+    -893 -2275 -112 -951 51 -1886 473 -2730 392 -784 993 -1460 1726 -1943 747
+    -492 1515 -761 2395 -839 74 -6 252 -11 395 -11 786 2 1482 165 2210 518 821
+    397 1492 983 2003 1747 441 657 719 1450 793 2258 18 195 16 668 -4 872 -77
+    775 -313 1468 -725 2133 -283 455 -670 890 -1107 1241 -637 513 -1453 886
+    -2250 1028 -382 68 -841 97 -1205 76z m700 -171 c592 -50 1162 -207 1703 -467
+    514 -248 928 -541 1327 -941 398 -399 676 -783 922 -1274 468 -935 596 -2039
+    358 -3077 -142 -619 -424 -1227 -807 -1743 -193 -259 -529 -615 -773 -818
+    -531 -442 -1291 -830 -1956 -998 -379 -96 -682 -137 -1074 -148 -447 -11 -850
+    34 -1280 143 -490 125 -1078 391 -1545 699 -299 197 -476 344 -755 624 -535
+    538 -921 1160 -1150 1851 -375 1135 -286 2392 246 3470 507 1028 1383 1854
+    2446 2306 435 185 871 300 1371 360 274 33 675 38 967 13z"/>
+    <!-- Resto de paths omitidos por brevedad -->
+  </g>
+
+</svg>

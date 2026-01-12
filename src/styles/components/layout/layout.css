@@ -1,9 +1,11 @@
 /*
-    ------------------------------------------------------
-    ----------  /jquery.antonydev.tech/  -----------------
-    ----------  /src/styles/components/layout/  ----------
-    ----------  /layout.css  -----------------------------
-    ------------------------------------------------------
+    ----------------------------------------------------------------------
+    ----------  /jquery.antonydev.tech/  ---------------------------------
+    ----------  /01-udemy/  ----------------------------------------------
+    ----------  /07-jquery-in-action-build-20-jquery-projects/  ----------
+    ----------  /src/styles/components/layout/  --------------------------
+    ----------  /layout.css  ---------------------------------------------
+    ----------------------------------------------------------------------
 */
 
 
@@ -68,7 +70,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
 }
 
@@ -146,6 +148,7 @@ body::-webkit-scrollbar {
     inset: 0;
     z-index: 0;
     background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #6366f1 100%);
+    /* background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #000000 100%); */
     transition: opacity 1200ms ease-in-out;
 }
 

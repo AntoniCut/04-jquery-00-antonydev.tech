@@ -1,9 +1,11 @@
 /*
-    -------------------------------------------------------
-    ----------  /jquery.antonydev.tech/  ------------------
-    ----------  /src/styles/components/buttons/  ----------
-    ----------  /buttons.css  -----------------------------
-    -------------------------------------------------------
+    ----------------------------------------------------------------------
+    ----------  /jquery.antonydev.tech/  ---------------------------------
+    ----------  /01-udemy/  ----------------------------------------------
+    ----------  /07-jquery-in-action-build-20-jquery-projects/  ----------
+    ----------  /src/styles/components/buttons/  -------------------------
+    ----------  /buttons.css  --------------------------------------------
+    ----------------------------------------------------------------------
 */
 
 
@@ -22,8 +24,8 @@
 .navbar__btn-close,
 .navbar-ui__btn-close {
     position: fixed;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     padding: 0.4rem;
     border-radius: 50px;
     display: flex;
@@ -37,6 +39,13 @@
     transition: all 300ms ease-in-out;
 }
 
+.navbar__btn-open,
+.navbar-ui__btn-open,
+.navbar__btn-close,
+.navbar-ui__btn-close {
+    width: 4rem;
+    height: 4rem;
+}
 
 /*  -----  buttons  -----  */
 

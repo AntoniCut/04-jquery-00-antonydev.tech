@@ -1,0 +1,11 @@
+<svg width="396.2" height="117" viewBox="0 0 396.2 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon -->
+  <circle cx="58.5" cy="58.5" r="52.65" fill="#8b5cf6" opacity="0.1" />
+  <path d="M40.95 35.099999999999994 L17.550000000000004 58.5 L40.95 81.9" stroke="#8b5cf6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M76.05 35.099999999999994 L99.44999999999999 58.5 L76.05 81.9" stroke="#352650" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M79.56 29.25 L37.44 87.75" stroke="#a78bfa" stroke-width="6.4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Text -->
+  <text x="137" y="64.1" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#5d8fdf">< jQuery /</text>
+  <text x="233" y="64.1" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#8b5cf6">antonydev.tech /></text>
+</svg>

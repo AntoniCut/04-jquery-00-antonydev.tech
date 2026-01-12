@@ -184,7 +184,7 @@ export const routesJQueryAntonydevTech = [
     },
 
     {
-        id: '404NotFoundPage',
+        id: '404',
         favicon: "/assets/favicon/jquery-favicon.ico",
         pageTitle: "404 | Not Found",
         path: "/404",
